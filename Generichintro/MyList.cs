@@ -14,8 +14,8 @@ namespace Generichintro
         }
         public void Add( T item )
         {
-            T[] tempArray = İtems;
-            İtems = new T[İtems.Length + 1];
+            T[] tempArray = İtems;  //yeni dizi tanımlandığında önceki elemanın kaybolmaması için yazılır.
+            İtems = new T[İtems.Length + 1]; //dizinin eleman sayısını 1 arttır.
             for (int i = 0; i < tempArray.Length; i++)
             {
                 İtems[i] = tempArray[i];

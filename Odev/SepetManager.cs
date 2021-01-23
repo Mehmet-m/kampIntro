@@ -6,7 +6,7 @@ namespace Odev
 {
     class SepetManager
     {
-        public void Pub(Product product)
+        public void Prod(Product product)
         {
             Console.WriteLine("Ürün Sepete Eklendi :" + product.UrunAdi);
             

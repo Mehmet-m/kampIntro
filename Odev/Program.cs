@@ -17,6 +17,7 @@ namespace Odev
             Product product3 = new Product();
             product3.UrunAdi = "Sweatshirt";
             product3.UrunFiyati = 70;
+           
 
             Product[] products = new Product[] { product1, product2, product3 };
 
@@ -25,11 +26,12 @@ namespace Odev
                 Console.WriteLine(product.UrunAdi);
                 Console.WriteLine(product.UrunFiyati);
             }
+            Console.WriteLine("-----------------------");
 
             SepetManager sepetManager = new SepetManager();
-            sepetManager.Pub(product1);
-            sepetManager.Pub(product2);
-            sepetManager.Pub(product3);
+            sepetManager.Prod(product1);
+            sepetManager.Prod(product2);
+            sepetManager.Prod(product3);
 
         }
     }
