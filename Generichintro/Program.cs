@@ -1,6 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace Generichintro
+namespace GenericsIntro
 {
     class Program
     {
@@ -8,9 +9,10 @@ namespace Generichintro
         {
             MyList<string> isimler = new MyList<string >();
             isimler.Add("Engin");
-
-
-
+            isimler.Add("Mehmet");
+            isimler.Add("Mehmet");
+            List<string> liste = new List<string>();
+            Console.WriteLine(liste.Count);
           
         
            

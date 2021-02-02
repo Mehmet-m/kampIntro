@@ -23,15 +23,20 @@ namespace Odev
 
             foreach (Product product in products)
             {
-                Console.WriteLine(product.UrunAdi);
-                Console.WriteLine(product.UrunFiyati);
+                Console.WriteLine(product.UrunAdi +- product.UrunFiyati + " - TL");
+                //Console.WriteLine(product.UrunFiyati);
             }
             Console.WriteLine("-----------------------");
 
             SepetManager sepetManager = new SepetManager();
-            sepetManager.Prod(product1);
-            sepetManager.Prod(product2);
-            sepetManager.Prod(product3);
+            //sepetManager.Prod(product1);
+            //sepetManager.Prod(product2);
+            //sepetManager.Prod(product3);
+            SepetManager[] sepets = new SepetManager[] { };
+            foreach (var sepetManager1 in sepets)
+            {
+                Console.WriteLine(sepets);
+            }
 
         }
     }
